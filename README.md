@@ -1,4 +1,4 @@
-:%s/:%s/# containers
+# containers
 
 Build status:
 
