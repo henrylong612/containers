@@ -200,8 +200,9 @@ class BinaryTree():
         if not node:
             return 0
         else:
-            return (1 + BinaryTree.__len__helper(node.left)
-                    + BinaryTree.__len__helper(node.right))
+            len_left = BinaryTree.__len__helper(node.left)
+            len_right = BinaryTree.__len__helper(node.right)
+            return (1 + len_left + len_right)
 
     def height(self):
         '''
